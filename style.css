@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+/* Sections */
+section {
+    width: 85%;
+    margin: 40px auto;
+}
+/* Odd boxes */
+section:nth-child(odd) {
+    background: hsl(211, 100%, 50%);
+}
+
+/* Even boxes */
+section:nth-child(even) {
+    background:white;
+}
+
+
+/* Headings */
+h2 {
+    margin-bottom: 15px;
+    color: hsl(211, 100%, 50%);
+}
+
+/* Glass Card Effect */
+.card, #about, #skills, #contact {
+    background: rgba(255,255,255,0.7);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    transform: scale(1.1);
+}
+
+/* Contact */
+#contact p {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #007bff;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+
+
+
